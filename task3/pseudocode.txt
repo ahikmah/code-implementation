@@ -1,0 +1,56 @@
+```
+MULAI
+
+input data
+    selama data tidak bertipe number:
+input data
+
+dataStr = convert data menjadi string
+splitArr=[]
+count = 0, i = 0, j = 0, k = 0
+
+// memisahkan data berdasarkan 0
+untuk i = 0, sampai i = dataStr.length - 1:
+    jika dataStr[i] != '0', maka:
+        splitArr[count] += dataStr[i]
+    jika tidak, maka:
+        count = count+1
+    i = i+1
+
+temp = ''
+untuk i = 0, sampai i = splitArr.length - 1:
+    temp = splitArr[i]
+
+
+    // split char
+    charArr = []
+    untuk j = 0, sampai j = temp.length - 1:
+        charArr[j] = temp[j]
+        j = j + 1
+
+
+    // sorting
+    temp2 = ''
+    untuk j = 0, sampai j = charArr.length - 1:
+        untuk k = j + 1, sampai k = charArr.length - 1:
+            jika charArr[j] > charArr[k], maka:
+                temp2 = charArr[j]
+                charArr[j] = charArr[k]
+                charArr[k] = temp2
+            k = k + 1
+        j = j + 1
+
+
+    //concate
+    finalResult = ''
+    untuk j = 0, sampai j = charArr.length - 1:
+        finalResult += charArr[j]
+        j = j + 1
+
+    charArr = []
+
+    i = i+1
+
+Output finalResult
+
+```
