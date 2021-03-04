@@ -42,15 +42,15 @@ untuk i = 0, sampai i = splitArr.length - 1:
 
 
     //concate
-    finalResult = ''
+    result = ''
     untuk j = 0, sampai j = charArr.length - 1:
-        finalResult += charArr[j]
+        result += charArr[j]
         j = j + 1
 
     charArr = []
 
     i = i+1
 
-Output finalResult
+Output result
 
 ```
