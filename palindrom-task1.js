@@ -1,19 +1,21 @@
-"use strict";
-const data = "malam";
+'use strict';
 
-if (typeof data !== "string") {
-    console.log("Data harus bertipe string");
-} else {
-    let palindrom = true;
-    const len = data.length;
+const detect_palindrom = function(data) {
+    if (typeof data !== 'string') {
+        console.log('Data harus bertipe string');
+    } else {
+        let palindrom = true;
+        const len = data.length;
 
-    for (let i = 0; i < len; i++) {
-        if (data[i] !== data[len - i - 1]) {
-            palindrom = false;
+        for (let i = 0; i < len; i++) {
+            if (data[i] !== data[len - i - 1]) {
+                palindrom = false;
+            }
         }
-    }
 
-    console.log(
-        palindrom ? `${data} merupakan Palindrom` : `${data} bukan Palindrom`
-    );
-}
+        console.log(
+            palindrom ? `${data} merupakan Palindrom` : `${data} bukan Palindrom`
+        );
+    }
+};
+detect_palindrom('malam');
